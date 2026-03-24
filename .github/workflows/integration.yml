@@ -17,12 +17,12 @@ jobs:
     steps:
 
       - name: Checkout Action
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           path: ./action
 
       - name: Checkout Example Repo to second path
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: Cyb3r-Jak3/worker-example-project
           path: example
@@ -36,12 +36,12 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.TEST_TOKEN }}
 
       - name: Checkout Example Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: Cyb3r-Jak3/worker-example-project
 
       - name: Checkout Action
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           path: ./action
 
